@@ -28,8 +28,9 @@ featureHeaders$name <- gsub("[\\(\\),-]+", "_" , featureHeaders$name)
 activityLabelsPath <- file.path(baseDataSourceDir, "activity_labels.txt")
 activityLabels <- read.table(activityLabelsPath,
                              header = FALSE, sep = " ",
-                             stringsAsFactors = FALSE)
-names(activityLabels) <- c("activity_id", "activity_name")
+                             stringsAsFactors = FALSE,
+                             col.names = c("activity_id", "activity_name")
+                             )
 
 
 ##

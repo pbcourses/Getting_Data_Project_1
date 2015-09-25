@@ -25,9 +25,16 @@ raw data files should be.
 This project consists of a script `run_analysis.R` written in R which will produce the following data:
 
  - `dataset` containing data ready for analysis and described in the [CodeBook](CodeBook.md)
- - `groupedMeans` containing a simple analysis on the above `dataset`
+ - `groupedMeans` containing a simple analysis on the above `dataset`.
 
 The script will also produce a file named `groupedMeans.txt` containing a txt export of the above analysis.
 
 Refer to the [CodeBook](CodeBook.md) for details about the process by which dataset is built, and the meaning of the data it contains.
- 
+
+## Dataset
+
+Contains the **mean** and **standard deviations** for all features measured in the original experiment (i.e.: reported in the `X_*` files), along with the corresponding activity name and subject. Training and test data are merged giving data for all 30 subjects.
+
+## groupedMeans
+
+Reports the **average** of each variable in the dataset for each activity and each subject. Measurement names are the same as for the dataset.
