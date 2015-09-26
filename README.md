@@ -33,7 +33,7 @@ Refer to the [CodeBook](CodeBook.md) for details about the process by which data
 
 ## Dataset
 
-Contains the **mean** and **standard deviations** for all features measured in the original experiment (i.e.: reported in the `X_*` files), along with the corresponding activity name and subject. Training and test data are merged giving data for all 30 subjects.
+Contains only the subset of gyro and accelerometer features referring to **mean** (`mean`) or **standard deviations** (`std`) measured in the original experiment (i.e.: reported in the `X_*` files), along with the corresponding activity name and subject. Training and test data are merged giving data for all 30 subjects.
 
 ## groupedMeans
 
